@@ -19,6 +19,7 @@ body{
   cursor: crosshair;
 }
 
+
 .main-container {
   width: 100%;
   display: flex;
@@ -36,8 +37,11 @@ header {
   /* padding: 50px 50px 30px 50px; */
 }
 
+.name {
+  font-size: 51px;
+}
 h1 {
-  font-size: 54px;
+
 font-weight: 30px;
 /* text-decoration: line-through; */
 }
@@ -170,16 +174,11 @@ input:checked + .slider:before {
   justify-content: space-between;
 }
 
-.showContact {
-  width: 13px;
-  margin-top: 110px;
-  cursor: pointer;
-}
-
 .showWork {
   margin-left: 20px;
   margin-top: 110px;
   cursor: pointer;
+  font-size: 27px;
   /*transition: opacity 1s ease-in;*/
 }
 
@@ -203,10 +202,15 @@ h1.showWork:hover + .work {
 .contact {
   width: 3px;
   opacity: 0;
+
 }
 
-.showContact{
-  width: 50px;
+
+.showContact {
+  width: 13px;
+  margin-top: 40px;
+  cursor: pointer;
+  font-size: 27px;
 }
 
 .showContact:hover + .contact{
@@ -225,4 +229,14 @@ h1.showWork:hover + .work {
 	transform: rotate(90deg);
 	transform-origin: left top 0;
   margin: 200px -30px;
+}
+
+@media (max-width: 600px){
+  .name{
+    font-size: 30px;
+  }
+
+  h2{
+    font-size: 27px;
+  }
 }
