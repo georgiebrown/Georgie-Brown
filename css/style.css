@@ -1,0 +1,228 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../HKGrotesk-Regular.woff);
+    font-weight: bold;
+  }
+
+body{
+  width: 100%;
+  font-family: myFirstFont;
+  line-height: 55px;
+  background-color: white;
+  color: black;
+  border-left: 20px solid red;
+   border-top: 20px solid blue;
+  border-right: 20px solid yellow;
+   border-bottom: 20px solid #00ae5c;
+  border-radius: 10px;
+  min-height: 650px;
+  cursor: crosshair;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+/* justify-content: center; */
+  flex-direction: column;
+  height: 596px;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+   display: flex;
+   justify-content: center;
+  /* justify-content: space-between; */
+  /* padding: 50px 50px 30px 50px; */
+}
+
+h1 {
+  font-size: 54px;
+font-weight: 30px;
+/* text-decoration: line-through; */
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 10px;
+  color: black;
+}
+
+.workContainer{
+  min-height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+a {
+  font-size: 16px;
+  color:black ;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+
+}
+
+footer {
+  padding: 0 12px;
+font-size: 10px;
+}
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: orange;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #24c0df;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #24c0df;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.letter {
+  -webkit-animation-duration: 10s;
+ -webkit-animation-delay: 0s;
+ -webkit-animation-iteration-count: infinite;
+}
+
+.letter2 {
+  -webkit-animation-duration: 10s;
+ -webkit-animation-delay: 2s;
+ -webkit-animation-iteration-count: infinite;
+}
+
+.letter3 {
+  -webkit-animation-duration: 10s;
+ -webkit-animation-delay: 3s;
+ -webkit-animation-iteration-count: infinite;
+}
+
+.letter4 {
+  -webkit-animation-duration: 10s;
+ -webkit-animation-delay: 4s;
+ -webkit-animation-iteration-count: infinite;
+}
+
+.inLine {
+  display: inline-block;
+}
+
+.wrap {
+  display:flex;
+  justify-content: space-between;
+}
+
+.showContact {
+  width: 13px;
+  margin-top: 110px;
+  cursor: pointer;
+}
+
+.showWork {
+  margin-left: 20px;
+  margin-top: 110px;
+  cursor: pointer;
+  /*transition: opacity 1s ease-in;*/
+}
+
+.work {
+    transition: 3s;
+     overflow: hidden;
+     height: 0;
+     margin-top: 85px;
+     margin-left: 15px;
+}
+
+h1.showWork:hover + .work {
+  height: 400px;
+}
+
+.contactContainer{
+  display: flex;
+  margin-right: 40px;
+  width: 0px;
+}
+.contact {
+  width: 3px;
+  opacity: 0;
+}
+
+.showContact{
+  width: 50px;
+}
+
+.showContact:hover + .contact{
+  opacity: 1;
+  cursor: crosshair;
+}
+
+/*.display{
+  display: block;
+  opacity: 1;
+  height: auto;
+  width: 100px;
+}*/
+
+.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+  margin: 200px -30px;
+}
