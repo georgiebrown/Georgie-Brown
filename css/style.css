@@ -59,16 +59,22 @@ h2 {
 }
 
 .work-grid{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+display: flex;
+flex-direction: column;
+align-items: center;
 
 }
 
 .work-grid img{
   width: auto;
   height: 300px;
+  display: block;
 }
+
+.work-grid img:nth-of-type(odd){
+  margin-left: 50%;
+}
+
 
 
 
